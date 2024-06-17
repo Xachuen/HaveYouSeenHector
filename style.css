@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: 0;
+    text-decoration: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+body{
+    background-image: url("images/background/magicalbackground.gif");
+    background-repeat: repeat;
+    overflow-x: hidden;
+}
+
+header{
+    margin-top: 10px;
+    width: 100%;
+    height: 90px;
+    display: block;
+}
+
+.inner_header{
+    width: 500px;
+    height: 100%;
+    display: block;
+    text-shadow: 5px 5px 5px black;
+    margin: 0 auto;
+    border-style: solid;
+    border-color: rgb(255, 255, 163);
+}
+
+.header_title{
+    height: 100%;
+    display: table;
+    margin: 0 auto;
+}
+
+#hand_header{
+    height: 100%;
+    width: 60px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header_title h1{
+    display: table-cell;
+    color: white;
+    vertical-align: middle;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section{
+    margin:20px;
+}
+
+#hector_img{
+    margin-top: 10px;
+    border-color: rgb(255, 255, 163);
+    border-style: solid;
+    border-width: 3px;
+    padding: 10px;
+
+}
+
+#hector_img img{
+    width: 300px;
+    height: auto;
+    border-color: rgb(255, 255, 163);
+    border-style: solid;
+    border-width: 3px;
+    padding: 5px;
+}
+
+.body_text{
+    color: black;
+    text-shadow: 2px 5px 5px white;
+    line-height: 35px;
+}
+
+#intro{
+    width: 50%;
+    display: block;
+    margin: 15px 0 0 0;
+    text-align: center;
+}
+
+#donate{
+    color: white;
+    text-shadow: 5px 5px 5px black;
+}
+
+#donate h1{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#donation_split{
+    display: flex;
+    width: 75%;
+    align-items: center;
+    width: 75%;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+    border-style: dotted;
+    margin: 0 auto;
+}
+
+#donate_form{
+    width: 700px;
+}
+
+#donation_split img{
+    height: 250px;
+    display: block;
+    width: 100%;
+}
+
+#dollar_sign{
+    color: rgb(255, 255, 134);
+    text-shadow: 1px 2px 2px black;
+}
+
+footer{
+    width: 100%;
+    height: 130px;
+    display: block;
+
+}
+
+#middle_footer{
+    display: table;
+    width:500px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#middle_footer p{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#tiger_pic{
+    height: 600px;
+    width: 700px;
+    position: absolute;
+    top: 500px;
+    left: 100%;
+    transition: left 1s ease-in-out;
+}
+
+#tiger_pic.animate-tiger{
+    left: calc(50% - 350px);
+}
