@@ -45,3 +45,24 @@ button.addEventListener('click', function(){
     }
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+    var audio = document.getElementById('background_music');
+    
+    // Try to play the audio
+    var playPromise = audio.play();
+
+    if (playPromise !== undefined) {
+        playPromise.then(function() {
+            // Automatic playback started!
+            // Show something in the UI that the audio is playing
+        }).catch(function(error) {
+            // Auto-play was prevented
+            // Show a play button to allow user to start playback
+            var playButton = document.getElementById('hand_header');
+            playButton.style.display = 'block';
+            playButton.addEventListener('click', function() {
+                audio.play();
+            });
+        });
+    }
+});
